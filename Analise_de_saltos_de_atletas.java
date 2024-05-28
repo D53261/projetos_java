@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //Criando a classe inicial para que o código funcione
-public class App {
+public class Analise_de_saltos_de_atletas {
     //Criando o método principal, que sempre será o primeiro a rodar quando o programa começar
     public static void main(String[] args) {
         //Definindo a variável scanner que irá receber informações
