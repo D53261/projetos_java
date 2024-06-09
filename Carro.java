@@ -1,13 +1,13 @@
+//Projeto criado a partir do site de atividades em Python, adaptado para Java
+//Link do site: https://wiki.python.org.br/ExerciciosClasses
+// Biblioteca usada para receber os dados inseridos pelo usuario em uma variável
 import java.util.Scanner;
 
 public class Carro {
-
     // Atributo privado que armazena o consumo de combustível do carro em km/l
     private Float consumo;
-    
     // Atributo privado que armazena a quantidade de combustível no tanque do carro
     private int combustivel;
-
     // Construtor da classe Carro que recebe o consumo de combustível como parâmetro
     public Carro(Float consumo) {
         // Inicializa o consumo de combustível com o valor passado como parâmetro
@@ -15,7 +15,6 @@ public class Carro {
         // Inicializa a quantidade de combustível no tanque com 0
         this.combustivel = 0;
     }
-
     // Método que simula o carro andando uma determinada distância
     public void andar(int distancia) {
         // Calcula a quantidade de combustível gasto com base na distância e no consumo
@@ -32,12 +31,10 @@ public class Carro {
             System.out.println("Você não conseguiu completar o trajeto, com a quantidade de combustivel que você possuia, só conseguiu percorrer " + distancia_maxima + "km, lhe faltando " + distancia_restante + "km para chegar ao final do percurso!");
         }
     }
-
     // Método que retorna a quantidade de combustível no tanque do carro
     public int obterGasolina() {
         return combustivel;
     }
-
     // Método que adiciona combustível ao tanque do carro
     public void adicionarGasolina(int adicional) {
         // Verifica se a quantidade de combustível adicionada não ultrapassa a capacidade máxima do tanque (55 litros)
@@ -52,18 +49,14 @@ public class Carro {
         }
     }
 }
-
 class Main {
     public static void main(String[] args) throws Exception{
         // Cria um objeto Scanner para ler entrada do usuário
         Scanner entrada = new Scanner(System.in);
-        
         // Exibe mensagem de boas-vindas ao usuário
         System.out.println("Bem vindo ao simulador de carro simplificado!");
-        
         // Variável que armazena a quantidade de combustível inicial do carro
         int combustivel;
-        
         // Loop que pede ao usuário a quantidade de combustível inicial do carro
         for (;;) {
             // Exibe mensagem pedindo ao usuário a quantidade de combustível inicial
@@ -81,20 +74,16 @@ class Main {
                 break;
             }
         }
-        
         // Exibe mensagem pedindo ao usuário o consumo de gasolina do carro
         System.out.println("Qual o consumo de gasolina do automóvel por km? ");
         // Lê a entrada do usuário
         String consumostr = entrada.next();
         // Converte a entrada em um valor float
         Float consumo = Float.parseFloat(consumostr);
-        
         // Cria um objeto Carro com o consumo de gasolina informado
         Carro carro = new Carro(consumo);
-        
         // Adiciona a quantidade de combustível inicial ao tanque do carro
         carro.adicionarGasolina(combustivel);
-        
         // Loop que permite ao usuário interagir com o carro
         for (;;) {
             // Exibe menu de opções ao usuário
@@ -105,7 +94,6 @@ class Main {
             System.out.println("O que vai fazer? ");
             // Lê a escolha do usuário
             int escolha = entrada.nextInt();
-            
             // Verifica a escolha do usuário e executa a ação correspondente
             if (escolha == 1) {
                 // Pede ao usuário a distância que deseja viajar
