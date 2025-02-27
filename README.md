@@ -4,5 +4,5 @@ Projetos em Java usados e aplicados em situações imaginárias, porém que retr
 * Java
 ## Feito por:
 ### Danilo Ribeiro 
-### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-142962274/
+### Linkedin: https://www.linkedin.com/in/danilo-ribeiro-catroli-da-silva/
 ### Email: danilo051007@gmail.com
